@@ -1,11 +1,7 @@
-# F-INR
-Initial code for 4 Applications 
+# F-INR: Functional Tensor Decomposition for Implicit Neural Representations 
 
-- image encoding
-- video encoding
-- 3D SDF reconstruction
-- Navier-Stokes super-resolution
-
+## Abstract
+Implicit Neural Representations (INRs) model signals as continuous, differentiable functions. However, monolithic INRs scale poorly with data dimensionality, leading to excessive training costs. We propose F-INR, a framework that addresses this limitation by factorizing a high-dimensional INR into a set of compact, axis-specific sub-networks based on functional tensor decomposition. These sub-networks learn low-dimensional functional components that are then combined via tensor operations. This factorization reduces computational complexity while additionally improving representational capacity. F-INR is both architecture- and decomposition-agnostic. It integrates with various existing INR backbones (e.g., SIREN, WIRE, FINER, Factor Fields) and tensor formats (e.g., CP, TT, Tucker), offering fine-grained control over the speed-accuracy trade-off via the tensor rank and mode. Our experiments show F-INR accelerates training by up to 20× and improves fidelity by over 6.0 dB PSNR compared to state-of-the-art INRs. We validate these gains on diverse tasks, including image representation, 3D geometry reconstruction, and neural radiance fields. We further show F-INR's applicability to scientific computing by modeling complex physics simulations. Thus, F-INR provides a scalable, flexible, and efficient framework for high-dimensional signal modeling. 
 
 ## Layout
 
