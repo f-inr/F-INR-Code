@@ -1,0 +1,9 @@
+jax[cpu]>=0.4
+flax>=0.8
+optax>=0.2
+numpy>=1.26
+scipy>=1.11
+Pillow>=10
+scikit-image>=0.22
+imageio>=2.34
+opencv-python-headless>=4.10

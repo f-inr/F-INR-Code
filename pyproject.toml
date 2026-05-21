@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finr"
+version = "0.1.0"
+description = "Publishable F-INR bundle for image, video, and SDF experiments."
+requires-python = ">=3.10"
+dependencies = [
+  "jax[cpu]>=0.4",
+  "flax>=0.8",
+  "optax>=0.2",
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "Pillow>=10",
+  "scikit-image>=0.22",
+  "imageio>=2.34",
+  "opencv-python-headless>=4.10",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,17 @@
+name: finr
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy>=1.26
+  - scipy>=1.11
+  - pillow>=10
+  - scikit-image>=0.22
+  - imageio>=2.34
+  - pip:
+      - jax[cpu]>=0.4
+      - flax>=0.8
+      - optax>=0.2
+      - opencv-python-headless>=4.10
+      - -e .

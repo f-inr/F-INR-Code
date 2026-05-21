@@ -1,0 +1,16 @@
+{
+  "experiment_name": "kodim23_finr_relu_posenc10_rank64",
+  "img_path": "assets/images/kodim23.png",
+  "model": "finr",
+  "backend": "relu",
+  "encoding": "positional",
+  "rank": 64,
+  "hidden_dims": [256, 256, 256],
+  "pos_enc": 10,
+  "downsample_stride": 1,
+  "steps": 50000,
+  "eval_every": 1000,
+  "learning_rate": 0.0001,
+  "seed": 0,
+  "output_dir": "image_public"
+}
