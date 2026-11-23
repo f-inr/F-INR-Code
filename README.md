@@ -151,3 +151,17 @@ The simulation runner is the publishable F-INR / PINN path only. It uses the Nav
 - `notebooks/sdf_finr_vs_baseline.ipynb`
 
 Each notebook uses the matching JSON configs in `configs/` and the assets in `assets/`.
+
+## Citation
+
+Paper: [arXiv:2503.21507](https://arxiv.org/abs/2503.21507) (WACV 2026)
+
+```bibtex
+@inproceedings{vemuri2026finr,
+    booktitle = {Winter Conference on Applications of Computer Vision (WACV)},
+    doi = {10.48550/arXiv.2503.21507},
+    year = {2026},
+    title = {F-INR: Functional Tensor Decomposition for Implicit Neural Representations},
+    author = {Sai Karthikeya Vemuri and Tim Büchner and Joachim Denzler},
+}
+```
